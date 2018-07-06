@@ -6,6 +6,6 @@ services:
       dockerfile: ./build/Dockerfile
     image: datascience
     volumes:
-      - $PWD:/home/datascience
+      - ./data:/home/data
     ports:
       - 8888:8888
