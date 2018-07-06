@@ -1,0 +1,11 @@
+version: "3"
+services:
+  datascience:
+    build:
+      context: .
+      dockerfile: ./build/Dockerfile
+    image: datascience
+    volumes:
+      - $PWD:/home/datascience
+    ports:
+      - 8888:8888
